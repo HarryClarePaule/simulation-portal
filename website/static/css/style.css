@@ -1,0 +1,29 @@
+html {
+  background: url('../satellite.jpg') no-repeat center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#MainTable {
+    display: flex;
+    flex: 50%;
+    padding: 5px;
+    flex-direction: row;
+}
+
+#CommentTable {
+    float: right;
+    display: flex;
+    flex: 50%;
+    flex-direction: row;
+    padding: 5px;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<p>
+    <button aria-controls="collapse1" aria-expanded="false" class="btn btn-primary" data-target="#NA_DT_01"
+            data-toggle="collapse" type="button" style="padding:1%; border:1%; margin:0">
+        NA-DT-01
+    </button>
+</p>
+<div class="collapse" id="NA_DT_01">
+
+        <ul class="list-group list-group-flush" id="notes">
+            {% for note in NA_DT_01 %}
+            <li class="list-group-item">
+                {{ note.comment }}
+                <button class="close" onClick="deleteNote({{ note.id }})" type="button">
+                    <span aria-hidden="true">&times</span>
+                </button>
+            </li>
+            {% endfor %}
+        </ul>
+
+    <form method="POST">
+        <input type="hidden" id="HPC_id" name="HPC_id" value="NA_DT_01">
+        <textarea class="form-control" id="note" name="note"></textarea>
+        <button class="btn btn-primary" style="padding:1%; border:1%; margin:0" type="submit">Add Note</button>
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} HPC Monitoring Table {% endblock %}</title>
+</head>
+<body>
+  
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+{% for category, message in messages %}
+{% if category == 'error' %}
+<div class="alert alert-danger alter-dismissable fade show" role="alert">
+    {{ message }}
+    <button class="close" data-dismiss="alert" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% else %}
+<div class="alert alert-success alter-dismissable fade show" role="alert">
+    {{ message }}
+    <button class="close" data-dismiss="alert" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+
+
+
+<div class="flex-container" id="table-container" style="padding:3.5% 0.1% 0.1% 0.1%">
+    <div>
+        <table class="table table-striped" id="MainTable" width="100%">
+            <tr style="text-align:center">
+                <th>HPC ID</th>
+                <th>HPC SPECS</th>
+                <th>COMSOL LICENSE</th>
+                <th>ADDITIONAL LICENSES</th>
+                <th>AVAILABILITY</th>
+                <th>USER ONLINE</th>
+                <th>USER NOTES</th>
+            </tr>
+            {% for pc in HPC_database %}
+            {% with HPC=pc.HPC_id %}
+            {% with html='comments/' + HPC + '.html' %}
+            {% if pc.Availability == 'AVAILABLE' %}
+            <tr>
+                <td style="text-align:center" width="8%">{{ pc.HPC_id }}</td>
+                <td width="16.67%"> {{ pc.HPC_specs }}</td>
+                <td width="25.34%">{{ pc.COMSOL_licences}}</td>
+                <td width="10%">{{ pc.Additional_licences }}</td>
+                <td width="15%"><p style="color:green;text-align:center"> {{ pc.Availability }} </p></td>
+                <td></td>
+                <td style="text-align:center" width="30%">{% include html %} </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td style="text-align:center" width="8%">{{ pc.HPC_id }}</td>
+                <td width="16.67%">{{ pc.HPC_specs }}</td>
+                <td width="25.34%">{{ pc.COMSOL_licences}}</td>
+                <td width="10%">{{ pc.Additional_licences }}</td>
+                <td width="8%"><p style="color:red;text-align:center"> {{ pc.Availability }} </p></td>
+                <td style="text-align:center" width="5%">{{ pc.User_online }}</td>
+                <td style="text-align:center" width="30%">{% include html %} </td>
+            </tr>
+            {% endif %}
+            {% endwith %}
+            {% endwith %}
+            {% endfor %}
+
+        </table>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js" integrity="sha384-FOdD5xZpPHda0Ib8RfXC4d2g3fK3L9P7FmeGpfD/LG1zDiN48ue5xE5y5w5a5muY" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const socket = io.connect('http://' + document.domain + ':' + location.port);
+        socket.on('refresh_page', () => {
+            location.reload();
+        });
+    });
+</script>
+
+
+
+</body>
+<footer>
+
+</footer>
+</html>
+
+

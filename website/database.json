@@ -1,0 +1,112 @@
+[
+    {
+        "hpc_id": "NA-DT-07",
+        "hpc_name": "MYKOLAS",
+        "comsol_lic": "License: NSL Saulius Rackauskas [10072819]\n1. THERMAL\n2. CAD IMPORT\n3. SW LIVELINK",
+        "lic_specs": "CPU 32 cores 3GHz | 64 GB RAM | Nvidia P200",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-04",
+        "hpc_name": "MANTAS",
+        "comsol_lic": "Licence: NSL Saulius Rackauskas [10074277]\n1. MECHANICAL\n2. THERMAL\n3. CAD IMPORT\n4. SW LIVELINK",
+        "lic_specs": "CPU 16 cores 2.8GHz | 128 GB RAM | Nvidia Quadro P2200",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+
+    },
+    {
+        "hpc_id": "NA-LT-122",
+        "hpc_name": "TEJA",
+        "comsol_lic": "Licence: NSL Teja Volbekaite [10074278]\n1. THERMAL\n2. CAD IMPORT\n3. SW LIVELINK",
+        "lic_specs": "CPU 32 cores 3.5GHz | 128 GB RAM | Nvidia Quadro P1000",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-01",
+        "hpc_name": "LEV",
+        "comsol_lic": "Licence: NSL Lev Son [10074266]\n1. THERMAL\n2. CAD IMPORT\n3. SW LIVELINK",
+        "lic_specs": "CPU 6 cores 3.3GHz | 128 GB RAM | Nvidia Quadro P2200",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-09",
+        "hpc_name": "EMILIS",
+        "comsol_lic": "Licence: NSL Saulius Rackauskas [10074470]\n1. THERMAL\n2. CAD IMPORT\n3. SW LIVELINK",
+        "lic_specs": "CPU 32 cores 3.5GHz | 128 GB RAM | Nvidia T1000",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-10",
+        "hpc_name": "HARRY CP",
+        "comsol_lic": "Licence: NSL Justas Tamosiunas [10074478]\n1. MECHANICAL\n2. CAD IMPORT\n3. SW LIVELINK",
+        "lic_specs": "CPU 24 cores 3.8GHz | 128 GB RAM | Nvidia T600",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-02",
+        "hpc_name": "SAULIUS",
+        "comsol_lic": "Licence: NSL Saulius Rackauskas [10072818] 1. MECHANICAL\n2. THERMAL\n3. CAD IMPORT\n4. SW LIVELINK\n5. RF",
+        "lic_specs": "CPU 16 cores 2.8GHz | 256 GB RAM | Nvidia Quadro P2200",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": "None"
+    },
+    {
+        "hpc_id": "NA-DT-03",
+        "hpc_name": "JUSTAS",
+        "comsol_lic": "Licence: NSL Justas Tamosiunas [10074478]\n1. MECHANICAL\n2. THERMAL\n3. CAD IMPORT\n4. SW LIVELINK",
+        "lic_specs": "CPU 6 cores 3.3GHz | 32 GB RAM | Nvidia Quadro P2200",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-19",
+        "hpc_name": "KAROLIS",
+        "comsol_lic": "Licence: NSL Saulius Rackauskas [10074277]\n1. MECHANICAL\n2. CAD IMPORT\n3. THERMAL",
+        "lic_specs": "CPU 32 cores 3.5GHz | 128 GB RAM | Nvidia T600",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-08",
+        "hpc_name": "HARRY",
+        "comsol_lic": "Licence: NSL Harry Pell [7082469]\n1. MECHANICAL\n2. THERMAL\n3. CAD IMPORT\n4. SW LIVELINK",
+        "lic_specs": "CPU 32 cores 3.5GHz | 128 GB RAM | Nvidia T1000",
+        "add_lic": "SW NETWORK / RHINO CLOUD",
+        "availability": "Unavailable on NA network",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-20",
+        "hpc_name": "MANTAS 2",
+        "comsol_lic": "Licence: NSL Saulius Rackauskas [10074277]\n1. MECHANICAL\n2. THERMAL\n3. CAD IMPORT",
+        "lic_specs": "CPU 32 cores | 128 GB RAM | Nvidia Quadro P620",
+        "add_lic": "NONE",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    },
+    {
+        "hpc_id": "NA-DT-21",
+        "hpc_name": "SAULIUS 2",
+        "comsol_lic": "Licence: NSL Saulius Rackauskas [10072818]\n1. MECHANICAL\n2. THERMAL\n3. CAD IMPORT\n4. RF",
+        "lic_specs": "CPU 32 cores | 128 GB RAM | Nvidia Quadro P620",
+        "add_lic": "NONE",
+        "availability": "AVAILABLE",
+        "user_online": ""
+    }
+
+]

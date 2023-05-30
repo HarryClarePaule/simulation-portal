@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %} Material Database {% endblock %}
+
+{% block content %}
+
+<div class="flex-container" id="data" style="padding:3.5% 0.1% 0.1% 0.1%">
+    <div>
+        <table class="table table-striped" id="MainTable" width="100%">
+            <col>
+            <col>
+            <col>
+            <col>
+            <colgroup span="4"></colgroup>
+            <colgroup span="4"></colgroup>
+            <colgroup span="4"></colgroup>
+            <colgroup span="4"></colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <colgroup span="4"></colgroup>
+            <colgroup span="4"></colgroup>
+            <col>
+            <colgroup span="4"></colgroup>
+            <colgroup span="4"></colgroup>
+
+            <tr style="text-align:center">
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Material Classification</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Alloy ID/Material Name</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Isotropic Material</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Density (kg/m3)</th>
+                <th colspan="3" style="vertical-align : middle;text-align:center; width: 50%;">Young's Modulus (GPa)</th>
+                <th colspan="3" style="vertical-align : middle;text-align:center; width: 50%;">Poisson's Ratio</th>
+                <th colspan="3" style="vertical-align : middle;text-align:center; width: 50%;">Tensile Yield Strength (MPa)</th>
+                <th colspan="3" style="vertical-align : middle;text-align:center; width: 50%;">Tensile Ultimate Strength (MPa)</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Brinell Hardness</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Rockwell Hardness</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Vicker's Hardness</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Material Damping Ration</th>
+                <th colspan="3" style="vertical-align : middle;text-align:center; width: 50%;">Coefficient of Thermal Expansion (1/K)</th>
+                <th colspan="3" style="vertical-align : middle;text-align:center; width: 50%;">Thermal Conductivity (W/(m.k))</th>
+                <th rowspan="2" style="vertical-align : middle;text-align:center;">Specific Heat Capacity (J/(kg.k))</th>
+                <th colspan="2" style="vertical-align : middle;text-align:center; width: 50%;">Temperature Limits of Operational Systems</th>
+                <th colspan="2" style="vertical-align : middle;text-align:center; width: 50%;">Temperature Limits of Non-Operational Systems</th>
+            </tr>
+            <tr>
+                <th scope="col">X (L-DIR)</th>
+                <th scope="col">Y (LT-Dir)</th>
+                <th scope="col">Z (ST-Dir)</th>
+                <th scope="col">X (L-DIR)</th>
+                <th scope="col">Y (LT-Dir)</th>
+                <th scope="col">Z (ST-Dir)</th>
+                <th scope="col">X (L-DIR)</th>
+                <th scope="col">Y (LT-Dir)</th>
+                <th scope="col">Z (ST-Dir)</th>
+                <th scope="col">X (L-DIR)</th>
+                <th scope="col">Y (LT-Dir)</th>
+                <th scope="col">Z (ST-Dir)</th>
+                <th scope="col">X (L-DIR)</th>
+                <th scope="col">Y (LT-Dir)</th>
+                <th scope="col">Z (ST-Dir)</th>
+                <th scope="col">X (L-DIR)</th>
+                <th scope="col">Y (LT-Dir)</th>
+                <th scope="col">Z (ST-Dir)</th>
+                <th scope="col">Min (°C)</th>
+                <th scope="col">Max (°C)</th>
+                <th scope="col">Min (°C)</th>
+                <th scope="col">Max (°C)</th>
+            </tr>
+            <tr>
+                <td>Aluminium Alloys</td>
+                <td>6061-T6</td>
+                <td>Yes</td>
+                <td>2710</td>
+                <td>68.3</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td>Aluminium Alloys</td>
+                <td>6061-T6</td>
+                <td>Yes</td>
+                <td>2710</td>
+                <td>68.3</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %} {% endblock %}
